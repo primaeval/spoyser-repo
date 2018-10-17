@@ -127,6 +127,8 @@ def playCommand(originalCmd, contentMode=False):
 
 
 def activateWindowCommand(cmd):
+    xbmc.executebuiltin(cmd)
+    return
     cmds = cmd.split(',', 1)
 
     #special case for filemanager
